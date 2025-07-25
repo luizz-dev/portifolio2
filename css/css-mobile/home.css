@@ -1,0 +1,30 @@
+@media (max-width: 470px) {
+  .sobre h1 {
+    font-size: 23px;
+  }
+  .sobre p {
+    font-size: 14px;
+  }
+  img {
+    position: relative;
+    max-width: 240px;
+    max-height: 250px;
+    margin-right: 50px;
+  }
+  .detalhe-img {
+    height: 245px;
+    width: 225px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-final {
+    margin-top: -54dvh;
+  }
+  .sobre {
+    margin-top: 40.7dvh;
+  }
+}
