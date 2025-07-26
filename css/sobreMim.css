@@ -13,6 +13,8 @@ header h2 {
 }
 #pagina {
   display: flex;
+  position: relative;
+  padding-left: 20px;
   align-items: center;
 }
 #pagina::before {
@@ -62,21 +64,70 @@ nav a::after {
   margin-left: 40px;
   width: 74%;
 }
+.detalheL {
+  position: relative;
+  font-size: 32px;
+  color: white;
+  display: inline-block;
+  padding: 20px; /* espaço para os Ls não encostarem no texto */
+}
+
+/* L normal no canto inferior esquerdo */
+.detalheL::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px; /* traço horizontal */
+  height: 5px;
+  background: #fff;
+}
+
+.detalheL::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5px; /* traço vertical */
+  height: 40px;
+  background: #fff;
+}
+
+.detalheL span {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px 0 0;
+}
+
+/* L invertido no canto superior direito */
+.detalheL span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+}
+
+.detalheL span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 20px;
+  background: #fff;
+}
+
 #projeto-h1 {
-  margin: 100px 0 60px 20px;
+  /* margin: 100px 0 60px 20px; */
   display: flex;
   justify-content: start;
   align-items: center;
   font-size: 35px;
 }
-#projeto-h1::before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 4.5px;
-  margin-right: 10px;
-  background: #f6f6f6;
-}
+
 .projetos {
   display: grid;
   justify-items: center;
@@ -101,27 +152,102 @@ nav a::after {
   font-family: "EB Garamond", serif;
 }
 
+/* slide */
+.projetos-slide {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.swiper {
+  width: 75vw;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #585589;
+  box-shadow: 0 0 30px #585589;
+  padding-bottom: 20px;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px 0 50px;
+}
+
+.slide-content img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.slide-text {
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.slide-text img {
+  width: 280px;
+  height: 85%;
+}
+
+.slide-text h1 {
+  font-size: 26px;
+  margin: 0px 0 5px 0;
+}
+
+.slide-text h2 {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  color: #ccc;
+  font-family: "EB Garamond", serif;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  right: 50px;
+}
+
+.swiper-button-next {
+  left: 85vw;
+}
+
+.swiper-pagination {
+  margin-top: 15px;
+  text-align: center;
+}
+hr {
+  margin-top: 90px;
+}
 .linguagens {
   display: flex;
   justify-content: center;
   gap: 80px;
   text-align: center;
-  margin: 100px 0 0 0;
+  margin: 70px 0 0 0;
 }
 
-.linguagens > div {
-  margin: 80px 0 0px 0;
-}
-.linguagens .js {
-  margin-top: 50px;
-}
-.linguagens .css {
-  margin-top: 99px;
-}
 .linguagens img {
   max-width: 300px;
 }
-
+.linguagens .css img {
+  width: 650px;
+  margin-top: -23px;
+}
+.linguagens .css h1 {
+  margin-top: 11.5px;
+}
 .linguagens div h1 {
   font-size: 40px;
 }
@@ -132,11 +258,47 @@ nav a::after {
   text-align: center;
 }
 
+.header-bloco-caixas {
+  text-align: center;
+  align-items: center;
+  background: #280e5b;
+  height: 700px;
+  padding: 1px 10%;
+  margin: 60px 0 50px 0;
+  border-radius: 0 200px 0 200px;
+}
+.header-bloco-caixas h1 {
+  margin-top: 60px;
+  display: inline-flex;
+  align-items: center;
+}
+.header-bloco-caixas h1::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 8px;
+  margin-right: 12px;
+  background: #671bff;
+  border-radius: 1px;
+  box-shadow: 0px 0px 7px #6b2bf5;
+}
+.header-bloco-caixas h1::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 8px;
+  margin-left: 12px;
+  background: #671bff;
+  box-shadow: 0px 0px 7px #6b2bf5;
+  border-radius: 1px;
+}
 .bloco-caixas {
   display: flex;
   justify-content: center;
   text-align: left;
-  margin: 60px 0;
+  margin: 150px 0;
 }
 .bloco-caixas div {
   width: 350px;
@@ -234,15 +396,11 @@ nav a::after {
 }
 
 @media (max-width: 1100px) {
-  .projetos img {
-    width: 405px;
-    height: 230px;
+  .projetos-slide {
+    display: flex;
   }
-  .projetos h1 {
-    font-size: 25px;
-  }
-  .projetos h2 {
-    font-size: 16px;
+  .projetos {
+    display: none;
   }
   .linguagens h1 {
     font-size: 3.2em;
@@ -251,16 +409,6 @@ nav a::after {
 
 /* tablet */
 @media (max-width: 1020px) {
-  .projetos img {
-    width: 380px;
-    height: 210px;
-  }
-  .projetos h1 {
-    font-size: 24.5px;
-  }
-  .projetos h2 {
-    font-size: 15px;
-  }
   .bloco-caixas section h1 {
     font-size: 28px;
   }

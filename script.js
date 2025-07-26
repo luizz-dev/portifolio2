@@ -25,3 +25,24 @@ sun.addEventListener("click", function () {
 moon.addEventListener("click", function () {
   document.body.classList.remove("light");
 });
+
+// Data de início: janeiro de 2022
+const dataInicio = new Date(2022, 0); // Janeiro = 0
+
+// Data atual
+const hoje = new Date();
+
+// Cálculo da diferença total em meses
+let anos = hoje.getFullYear() - dataInicio.getFullYear();
+let meses = hoje.getMonth() - dataInicio.getMonth();
+
+// Ajusta se os meses forem negativos
+if (meses < 0) {
+  anos -= 1;
+  meses += 12;
+}
+
+// Mostra no HTML
+document.getElementById(
+  "tempo-decorrido"
+).textContent = `${anos} anos e ${meses} meses`;

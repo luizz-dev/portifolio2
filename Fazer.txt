@@ -1,0 +1,1 @@
+tetar inclinar em 45 graus uma linha reta no before/after do projetos h1 e colocar um box-Shadow de -10px -10px 1px #fff
