@@ -146,6 +146,11 @@ form button {
 .icones-mobile {
   display: none;
 }
+#menu-nav {
+  filter: brightness(0) invert(1);
+  width: 32px;
+  height: 32px;
+}
 @media (max-width: 1440px) {
   form {
     margin-top: 10px;

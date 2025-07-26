@@ -69,55 +69,18 @@ nav a::after {
   font-size: 32px;
   color: white;
   display: inline-block;
-  padding: 20px; /* espaço para os Ls não encostarem no texto */
+  margin: 50px;
 }
-
-/* L normal no canto inferior esquerdo */
 .detalheL::before {
   content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40px; /* traço horizontal */
-  height: 5px;
-  background: #fff;
-}
-
-.detalheL::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 5px; /* traço vertical */
-  height: 40px;
-  background: #fff;
-}
-
-.detalheL span {
   position: relative;
   display: inline-block;
-  padding: 10px 15px 0 0;
-}
-
-/* L invertido no canto superior direito */
-.detalheL span::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 5px;
   background: #fff;
-}
-
-.detalheL span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 5px;
-  height: 20px;
-  background: #fff;
+  transform: rotate(25deg);
+  box-shadow: -10px -10px 1px #ffffff;
+  margin: 0 0 5px 0;
 }
 
 #projeto-h1 {
@@ -326,7 +289,7 @@ hr {
   margin: 30px 0 0 60px;
 }
 .bloco-caixas div p {
-  font-size: 20px;
+  font-size: 100%;
   padding: 0px 0 0 40px;
 }
 .formacao p {
