@@ -1,2 +1,4 @@
 arrumar o display none e etc no mobile
-teste git
+ver video como usar git
+https://www.youtube.com/watch?v=HIqyLRKv-YE
+sei nao
