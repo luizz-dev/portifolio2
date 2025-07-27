@@ -1,1 +1,1 @@
-arrumar o slide.js para colocar eles no modules
+arrumar o display none e etc no mobile

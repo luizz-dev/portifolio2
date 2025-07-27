@@ -1,4 +1,4 @@
-export function mudarTema() {
+export default function mudarTema() {
   const moon = document.getElementById("moon");
   const sun = document.getElementById("sun");
 

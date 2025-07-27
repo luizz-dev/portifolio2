@@ -1,4 +1,8 @@
 @media (max-width: 470px) {
+  #menu-nav {
+    display: block !important;
+    background: #ff0000;
+  }
   form {
     margin-top: 5%;
     width: 85vw !important;

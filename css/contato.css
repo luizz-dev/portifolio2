@@ -23,7 +23,8 @@ body {
 }
 nav {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
   margin-top: -54px;
   max-width: 90vw;
 }
@@ -46,6 +47,18 @@ nav a::after {
   top: 25px;
   left: 0;
   transition: 0.3s ease;
+}
+#menu-nav {
+  display: none;
+  filter: brightness(0) invert(1);
+  width: 55px;
+  height: 55px;
+  background: #ff0000;
+}
+@media (max-width: 470px) {
+  #menu-nav {
+    display: block !important;
+  }
 }
 /* animacoes nav */
 #h-nav:hover::after {
@@ -127,7 +140,8 @@ form button {
   margin-top: 15px;
   cursor: pointer;
 }
-#github {
+#github,
+#githubMobile {
   background: #ffff;
   border-radius: 50%;
   max-width: 90%;
@@ -146,11 +160,7 @@ form button {
 .icones-mobile {
   display: none;
 }
-#menu-nav {
-  filter: brightness(0) invert(1);
-  width: 32px;
-  height: 32px;
-}
+
 @media (max-width: 1440px) {
   form {
     margin-top: 10px;
@@ -209,5 +219,8 @@ form button {
     width: 38.5vw;
   }
 }
-
-/* vai ate 830 */
+/* @media (max-width: 470px) {
+  html body nav #menu-nav {
+    display: block !important;
+  }
+} */

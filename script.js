@@ -1,21 +1,26 @@
 import { menuToggle } from "./modules/menu.js";
 import { atlzData } from "./modules/atualizaData.js";
-// import { slides } from "./modules/slide.js";
-import { mudarTema } from "./modules/mudarTema.js"; // Exemplo seu mudarTema
+import { slides } from "./modules/slide.js";
+import mudarTema from "./modules/mudarTema.js";
+import { redirecionarCliente } from "./modules/redirecinar.js";
 
+//evita bug desnecessarios
 document.addEventListener("DOMContentLoaded", () => {
-  menuToggle();
-  atlzData();
-  // slides();
-  mudarTema();
-});
+  const path = window.location.pathname;
 
-function redirecionarL() {
-  window.location.href = "https://www.linkedin.com/in/luiz-alves-leite/";
-}
-function redirecionarG() {
-  window.location.href = "https://github.com/luizz-dev";
-}
-function redirecionarW() {
-  window.location.href = "https://wa.me/11958212008";
-}
+  if (path == "/sobreMim.html") {
+    slides();
+    atlzData();
+    // só executa na página "projetos.html"
+  }
+
+  if (path == "/index.html" || path === "/") {
+    mudarTema(); // só na home
+  }
+
+  if (path === "/contato.html") {
+    redirecionarCliente(); //so no contato
+  }
+
+  menuToggle(); //sempre
+});

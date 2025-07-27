@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/contato.css">
-  <link rel="stylesheet" href="css/css-mobile/contato-m.css">
+  <link rel="stylesheet" href="css/css-mobile/contato-c.css">
   <title>Contato</title>
 </head>
 
 <body>
   <header class="cor-preta">
-    <header>
-      <h2 id="pagina">Contato</h2>
+    <div>
       <nav>
+        <h2 id="pagina">Contato</h2>
         <img src="imgs/list.svg" alt="menu" id="menu-nav">
         <div id="menu-links">
           <a id="h-nav" href="./index.html">Home</a>
@@ -22,37 +22,35 @@
         </div>
 
       </nav>
-    </header>
-
-    <section class="contato">
-      <div class="icones">
-        <img onclick="redirecionarW()" src="imgs/icons8-whatsapp.svg" alt="whatsapp">
-        <img onclick="redirecionarG()" id="github" src="imgs/icons8-github (1).svg" alt="github">
-        <img onclick="redirecionarL()" src="imgs/icons8-linkedin.svg" alt="">
-      </div>
-
-      <form action="https://formspree.io/f/mbljrnkp" method="POST">
-
-        <label>Nome</label>
-        <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
-
-        <label>Email</label>
-        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-
-        <label>Mensagem</label>
-        <textarea id="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-
-        <button onclick="verificar()" type="submit">Enviar</button>
-
-
-      </form>
-      <div class="icones-mobile">
-        <img onclick="redirecionarW()" src="imgs/icons8-whatsapp.svg" alt="whatsapp">
-        <img onclick="redirecionarG()" id="github" src="imgs/icons8-github (1).svg" alt="github">
-        <img onclick="redirecionarL()" src="imgs/icons8-linkedin.svg" alt="">
-      </div>
-    </section>
   </header>
+
+  <section class="contato">
+    <div class="icones">
+      <img id="whatsapp-contato" src="imgs/icons8-whatsapp.svg" alt="whatsapp">
+      <img id="github" src="imgs/icons8-github (1).svg" alt="github">
+      <img id="linkedin-contato" src="imgs/icons8-linkedin.svg" alt="">
+    </div>
+
+
+    <form action="https://formspree.io/f/mbljrnkp" method="POST">
+
+      <label>Nome</label>
+      <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+
+      <label>Email</label>
+      <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+
+      <label>Mensagem</label>
+      <textarea id="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+
+
+    </form>
+
+  </section>
+  </header>
+
   <script type="module" src="script.js"></script>
 </body>
 
