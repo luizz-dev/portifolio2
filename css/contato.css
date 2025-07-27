@@ -13,6 +13,7 @@ body {
   align-items: center;
   font-size: 32px;
 }
+
 #pagina::before {
   content: "";
   display: inline-block;
@@ -48,18 +49,13 @@ nav a::after {
   left: 0;
   transition: 0.3s ease;
 }
-#menu-nav {
+#menuNav {
   display: none;
   filter: brightness(0) invert(1);
   width: 55px;
   height: 55px;
-  background: #ff0000;
 }
-@media (max-width: 470px) {
-  #menu-nav {
-    display: block !important;
-  }
-}
+
 /* animacoes nav */
 #h-nav:hover::after {
   margin-left: 40px;
@@ -219,8 +215,3 @@ form button {
     width: 38.5vw;
   }
 }
-/* @media (max-width: 470px) {
-  html body nav #menu-nav {
-    display: block !important;
-  }
-} */

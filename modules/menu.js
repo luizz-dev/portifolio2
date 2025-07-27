@@ -1,5 +1,5 @@
 export function menuToggle() {
-  let menuNav = document.getElementById("menu-nav");
+  let menuNav = document.getElementById("menuNav");
   let menuLinks = document.getElementById("menu-links");
 
   if (!menuNav || !menuLinks) return; // segurança, evita erro se não achar vi no chat esse if

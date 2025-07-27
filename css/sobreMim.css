@@ -370,7 +370,6 @@ hr {
   }
 }
 
-/* tablet */
 @media (max-width: 1020px) {
   .bloco-caixas section h1 {
     font-size: 28px;
