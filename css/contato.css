@@ -153,8 +153,8 @@ form button {
   margin-top: 25px;
 }
 
-.icones-mobile {
-  display: none;
+.linksMoba {
+  display: block;
 }
 
 @media (max-width: 1440px) {
