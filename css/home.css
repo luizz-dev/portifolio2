@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 body {
-  margin: 55px 100px 0px 100px;
+  margin: 25px 100px 0px 100px;
 }
 body.light {
   background: #585589;
@@ -12,24 +12,22 @@ body.light {
 header h2 {
   /* font-family: monospace; */
   font-size: 35px;
-  margin-top: 70px;
 }
-#pagina {
-  display: flex;
-  align-items: center;
-}
+
 #pagina::before {
   content: "";
   display: inline-block;
   width: 25px;
   height: 5px;
   margin-right: 10px;
+  margin-bottom: 8px;
   background: #f6f6f6;
 }
 nav {
   display: flex;
-  justify-content: end;
-  margin-top: -58px;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: -8px; */
 }
 nav a {
   padding-left: 50px;
@@ -51,6 +49,29 @@ nav a::after {
   left: 0;
   transition: 0.3s ease;
 }
+#menuNav {
+  display: none;
+  filter: brightness(0) invert(1);
+  width: 55px;
+  height: 55px;
+}
+#menuNav,
+#close-menu {
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+.rotate {
+  transform: rotate(360deg);
+}
+#close-menu {
+  display: none;
+  filter: brightness(0) invert(1);
+  width: 40px;
+  height: 40px;
+}
+#menuNav.hide {
+  display: none;
+}
 /* animacoes nav */
 #h-nav:hover::after {
   margin-left: 40px;
@@ -68,7 +89,7 @@ nav a::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16vh;
+  margin-top: 13vh;
 }
 
 .sobre a {

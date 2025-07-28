@@ -16,24 +16,23 @@ export function menuToggle() {
 
       menuNavClose.classList.add("show");
 
-      // Aguarda aparecer antes de girar
       setTimeout(() => {
         menuNavClose.classList.add("rotate");
+        document.body.classList.add("transparente");
       }, 20);
 
       menuLinks.classList.add("on");
+      document.body.classList.add("transparente");
     }, transitionTime);
   });
-  //parte do tempo feita pelo chatGPT
-  menuNavClose.addEventListener("click", () => {
-    // Inicia rotação do X
+
+  // Função para fechar com animação
+  function closeMenu() {
     menuNavClose.classList.add("rotate");
 
-    // Espera o X girar antes de esconder
     setTimeout(() => {
       menuNavClose.classList.remove("rotate");
 
-      // Só esconde o X depois que ele terminou de girar
       setTimeout(() => {
         menuNavClose.classList.remove("show");
 
@@ -41,12 +40,29 @@ export function menuToggle() {
         menuNav.classList.add("rotate");
 
         menuLinks.classList.remove("on");
+        document.body.classList.remove("transparente");
 
-        // Remove rotação do hambúrguer depois que ele terminar
         setTimeout(() => {
           menuNav.classList.remove("rotate");
-        }, 10);
-      }, transitionTime);
+        }, 200);
+      }, transitionTime + 50);
     }, transitionTime);
+  }
+
+  // Clicou no botão X
+  menuNavClose.addEventListener("click", closeMenu);
+
+  // Clicou fora do menu
+  document.addEventListener("click", (e) => {
+    const clickedOutside =
+      !menuLinks.contains(e.target) &&
+      !menuNav.contains(e.target) &&
+      !menuNavClose.contains(e.target);
+
+    const menuIsOpen = menuLinks.classList.contains("on");
+
+    if (clickedOutside && menuIsOpen) {
+      closeMenu();
+    }
   });
 }
