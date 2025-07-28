@@ -27,7 +27,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: -8px; */
 }
 nav a {
   padding-left: 50px;
@@ -143,6 +142,12 @@ footer {
 body.light #dtlGrandeC {
   display: none;
 }
+body #dtlGrandeE {
+  display: none;
+}
+body.light #dtlGrandeE {
+  display: block;
+}
 
 body.light #sun {
   display: none;
@@ -197,30 +202,29 @@ body.light #moon {
     font-size: 16px;
   }
   img {
-    max-width: 300px;
-    max-height: 350px;
+    max-width: 285px;
+    max-height: 335px;
   }
   .detalhe-img {
-    margin-left: -280px;
-    height: 340px;
-    width: 285px;
+    margin-left: -260px;
+    height: 328px;
+    width: 270px;
   }
 }
-/* @media (max-width: 1050px) {
+@media (max-width: 1000px) {
   .sobre h1 {
-    font-size: 34px;
+    font-size: 35px;
   }
   .sobre p {
     font-size: 16px;
   }
   img {
-    max-width: 370px;
-    max-height: 370px;
+    max-width: 275px;
+    max-height: 325px;
   }
   .detalhe-img {
-    height: 370px;
-    width: 320px;
+    margin-left: -250px;
+    height: 320px;
+    width: 260px;
   }
-  .img-final {
-  }
-} */
+}
