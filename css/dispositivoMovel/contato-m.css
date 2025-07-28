@@ -5,11 +5,19 @@
   }
   #menuNav {
     display: block;
-    transition: transform 0.7s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     cursor: pointer;
   }
-  #menuNav.on {
-    transform: rotate(360deg);
+  #close-menu {
+    display: none;
+  }
+
+  /* Controla visibilidade */
+  #menuNav.hide {
+    display: none;
+  }
+  #close-menu.show {
+    display: block;
   }
   #menu-links {
     display: none;
@@ -35,19 +43,19 @@
   #menu-links a {
     padding: 20px 15px;
   }
-  form {
-    margin-top: -10px;
-  }
-
   @keyframes slideIn {
     0% {
       opacity: 0;
-      transform: translate(-50%, -20px); /* um pouco acima e invisível */
+      transform: translate(-50%, -20px);
     }
     100% {
       opacity: 1;
-      transform: translate(-50%, 0); /* posição final */
+      transform: translate(-50%, 0);
     }
+  }
+
+  form {
+    margin-top: -10px;
   }
 }
 @media (max-width: 470px) {

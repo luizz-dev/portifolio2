@@ -55,6 +55,23 @@ nav a::after {
   width: 55px;
   height: 55px;
 }
+#menuNav,
+#close-menu {
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+.rotate {
+  transform: rotate(360deg);
+}
+#close-menu {
+  display: none;
+  filter: brightness(0) invert(1);
+  width: 40px;
+  height: 40px;
+}
+#menuNav.hide {
+  display: none;
+}
 
 /* animacoes nav */
 #h-nav:hover::after {
@@ -151,10 +168,6 @@ form button {
   border-radius: 20px;
   background-color: #e6e6e6;
   margin-top: 25px;
-}
-
-.linksMoba {
-  display: block;
 }
 
 @media (max-width: 1440px) {
