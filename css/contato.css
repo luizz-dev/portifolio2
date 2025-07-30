@@ -2,9 +2,11 @@ body {
   background: #585589;
   background: linear-gradient(180deg, #585589 0%, #3b3868 58%);
   color: #fff;
+  height: 100svh;
   margin: 0;
 }
 #pagina {
+  display: flex;
   align-items: center;
   font-size: 32px;
 }
@@ -13,19 +15,24 @@ body {
   content: "";
   display: inline-block;
   width: 25px;
-  height: 5px;
+  height: 5px; 
   margin-right: 10px;
   background: #f6f6f6;
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: -54px;
-  max-width: 90vw;
+  width: 100%;
 }
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
-  padding-left: 50px;
+  padding-left: 40px;
   position: relative;
   display: inline-block;
   font-size: 1.3rem;
@@ -148,11 +155,14 @@ form button {
   margin-top: 15px;
   cursor: pointer;
 }
+.iconesMoba {
+  display: none;
+}
 #github,
 #githubMobile {
   background: #ffff;
   border-radius: 50%;
-  max-width: 90%;
+  height: 48px;
 }
 .icones::after {
   content: "";
