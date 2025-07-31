@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    margin: 10px 0 0 0;
   }
   .nav-moba {
     display: flex;
@@ -49,17 +49,20 @@
     align-items: center;
     position: absolute;
     background: #615d9c;
-    width: 55vw;
+    width: 50vw;
     height: 80px;
     border-radius: 25px;
     margin-top: 25vh;
     padding: 10px;
     box-shadow: 0 8px 30px #9b95ea;
-    left: 53%;
+    left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     animation: slideIn 0.6s ease forwards;
     z-index: 10;
+  }
+  .contato {
+    margin: 64px 0 0 0;
   }
   form {
     margin-top: -10px;
@@ -125,16 +128,33 @@
     display: none;
   }
 }
-@media (max-width: 470px) {
-  body {
-    background: #585589;
-    background: linear-gradient(90deg, #585589 0%, #3b3868 58%);
-    height: 96vh;
+@media (max-width: 560px) {
+  .contato {
+    margin: 64px 0 0 0;
   }
+  form {
+    width: 70vw;
+    margin-top: -10px;
+  }
+  form label {
+    width: 45vw;
+  }
+  form input {
+    width: 44vw;
+    height: 35px;
+  }
+  form textarea {
+    width: 44vw;
+  }
+  form button {
+    width: 45vw;
+  }
+}
+@media (max-width: 470px) {
   nav {
     display: flex;
     justify-content: space-evenly;
-    margin: 8% 8% 0 8%;
+    margin: 10px 0 0 0;
   }
 
   nav div {
@@ -145,38 +165,29 @@
   }
 
   .contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 17% 0 0 0;
+    margin: 64px 0 0 0;
   }
   form {
-    display: flex;
-    justify-content: center;
-    width: 85vw !important;
-    height: 60vh;
+    width: 75vw;
+    margin-top: -10px;
   }
   form label {
-    width: 60.4vw;
-    font-size: 24px;
+    width: 50vw;
   }
   form input {
-    width: 60vw;
+    width: 48vw;
     height: 35px;
   }
   form textarea {
-    width: 60vw;
+    width: 48vw;
   }
   form button {
-    width: 60.5vw;
+    width: 50vw;
   }
   #github {
     margin: 0 30px;
   }
-  .icones {
-    display: none;
-  }
+
   /* .icones-moba {
     display: flex;
     justify-content: center;
@@ -195,34 +206,3 @@
     z-index: -1;
   } */
 }
-.icones-moba {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-  background: #3b3868;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 12px 25px #6c69a8;
-}
-.icones-moba img {
-  max-width: 48px;
-}
-#menu-links.on {
-  width: 65vw;
-  height: 75px;
-}
-#menu-links a {
-  font-size: 18px;
-}
-/* .icones-moba::before {
-  content: "";
-  position: absolute;
-  left: -15px;
-  top: 0;
-  width: 10px;
-  height: 100%;
-  background: transparent;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-} */
