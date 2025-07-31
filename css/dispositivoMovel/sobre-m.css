@@ -87,3 +87,14 @@
     }
   }
 }
+
+@media (max-width: 470px) {
+  #menu-links.on {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+  }
+  #menu-links.on a {
+    font-size: 16px;
+  }
+}

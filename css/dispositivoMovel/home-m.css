@@ -161,12 +161,12 @@
     margin-top: 30px;
   }
   #menu-links.on {
-    width: 60vw;
-    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
   }
-  #menu-links a {
+  #menu-links.on a {
     font-size: 16px;
-    padding: 20px 15px;
   }
 
   .container {
