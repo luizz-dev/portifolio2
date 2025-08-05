@@ -2,7 +2,7 @@ body {
   background: #585589;
   background: linear-gradient(180deg, #585589 0%, #3b3868 58%);
   color: #fff;
-  height: 100svh;
+  height: 100dvh;
   margin: 0;
 }
 #pagina {
@@ -52,6 +52,7 @@ nav a::after {
   left: 0;
   transition: 0.3s ease;
 }
+
 #menuNav {
   display: none;
   filter: brightness(0) invert(1);
@@ -78,16 +79,16 @@ nav a::after {
 
 /* animacoes nav */
 #h-nav:hover::after {
-  margin-left: 40px;
+  margin-left: 34px;
   width: 67%;
 }
 #s-nav:hover::after {
-  margin-left: 40px;
+  margin-left: 33px;
   width: 80%;
 }
 #c-nav:hover::after {
-  margin-left: 40px;
-  width: 74%;
+  margin-left: 35px;
+  width: 72%;
 }
 .contato {
   display: flex;
