@@ -1,3 +1,7 @@
 fazer o hamburger para home e sobre mim
 arrumar o hover dos links (mesmo px do contato)
 arrumar pro mobile contato
+
+
+ver a solucao
+https://chatgpt.com/c/689613bd-2034-8323-b350-155669455ad4

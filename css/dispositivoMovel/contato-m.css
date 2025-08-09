@@ -83,6 +83,9 @@
     border-radius: 10px;
     box-shadow: 0 12px 25px #6c69a8;
   }
+  .iconesMoba {
+    margin-bottom: 15px !important;
+  }
   .icones-moba img {
     max-width: 45px;
   }
@@ -130,7 +133,7 @@
 }
 @media (max-width: 560px) {
   .contato {
-    margin: 64px 0 0 0;
+    margin: 60px 0 0 0;
   }
   form {
     width: 70vw;
@@ -213,4 +216,38 @@
     box-shadow: -10px 0px 1px #211f3c;
     z-index: -1;
   } */
+}
+@media (max-height: 845px) {
+  .contato {
+    margin: 50px 0 0 0;
+  }
+  form {
+    min-width: 80dvw !important;
+    /* margin-top: -10px; */
+    height: 65dvh;
+  }
+  form label:first-child {
+    margin-top: 25px;
+    /* label nome */
+  }
+  form label {
+    width: 53dvw;
+  }
+  form input {
+    width: 51dvw;
+    min-height: 25px;
+    height: 30px;
+  }
+
+  form textarea {
+    width: 51dvw;
+  }
+  form button {
+    width: 53dvw;
+    min-height: 40px;
+    margin-bottom: 20px;
+  }
+  .iconesMoba {
+    margin-top: 15px;
+  }
 }

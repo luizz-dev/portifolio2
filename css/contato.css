@@ -24,7 +24,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin: 15px 0 -10px 0;
+  margin: 25px 0 -10px 0;
 }
 
 nav div {
@@ -106,12 +106,12 @@ form {
   width: 50vw;
   height: 70vh;
   border-radius: 30px;
-  /* background: #585589;
+  background: #585589;
   background: linear-gradient(
-    230deg,
+    260deg,
     rgba(88, 85, 137, 1) 0%,
     rgba(59, 56, 104, 1) 58%
-  ); */
+  );
   box-shadow: 0px 0px 20px #160b3e;
 }
 form label {
@@ -150,7 +150,7 @@ form button {
 .icones {
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 6%;
   padding-right: 50px;
 }
 .icones img {
@@ -179,23 +179,26 @@ form button {
 
 @media (max-width: 1440px) {
   form {
-    margin-top: 10px;
+    margin-top: 0px;
     width: 60vw;
-    height: 70vh;
+    height: 73vh;
   }
   form label {
-    width: 28.4vw;
+    width: 34vw;
     font-size: 24px;
   }
   form input {
-    width: 28vw;
+    width: 33.5vw;
     height: 35px;
   }
   form textarea {
-    width: 28vw;
+    width: 33vw;
   }
   form button {
-    width: 28.5vw;
+    width: 33.5vw;
+  }
+  .icones {
+    margin-top: 7.5%;
   }
 }
 @media (max-width: 1290px) {
@@ -233,5 +236,16 @@ form button {
   }
   form button {
     width: 38.5vw;
+  }
+  .icones {
+    margin-top: 10vh;
+  }
+}
+@media (max-height: 850px) {
+  form {
+    max-width: 59vw;
+  }
+  .icones {
+    margin-top: 3.5%;
   }
 }
