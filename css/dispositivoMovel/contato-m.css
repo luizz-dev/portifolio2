@@ -251,3 +251,38 @@
     margin-top: 15px;
   }
 }
+
+@media (max-height: 801px) {
+  .contato {
+    margin: 50px 0 0 0;
+  }
+  form {
+    min-width: 45dvw !important;
+    /* margin-top: -10px; */
+    height: 70dvh;
+  }
+  form label:first-child {
+    margin-top: 25px;
+    /* label nome */
+  }
+  form label {
+    width: 35dvw;
+  }
+  form input {
+    width: 35dvw;
+    min-height: 25px;
+    height: 30px;
+  }
+
+  form textarea {
+    width: 35dvw;
+  }
+  form button {
+    width: 36dvw;
+    min-height: 40px;
+    margin-bottom: 20px;
+  }
+  .iconesMoba {
+    margin-top: 15px;
+  }
+}

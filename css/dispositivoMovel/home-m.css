@@ -376,3 +376,30 @@
     max-width: 40px;
   }
 }
+
+@media (max-height: 801px) {
+  body {
+    margin: 20px 100px 20px 100px;
+  }
+  .container {
+    margin-top: 40px;
+  }
+  .sobre h1 {
+    font-size: 38px;
+  }
+  .sobre p {
+    font-size: 18px;
+  }
+  img {
+    max-width: 300px;
+    max-height: 330px;
+  }
+  .detalhe-img {
+    margin-left: -290px;
+    height: 325px;
+    width: 300px;
+  }
+  footer {
+    margin-top: 75px;
+  }
+}
