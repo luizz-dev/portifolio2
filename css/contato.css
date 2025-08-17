@@ -1,14 +1,33 @@
+html,
 body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#space {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+}
+
+/* body {
   background: #585589;
   background: linear-gradient(180deg, #585589 0%, #3b3868 58%);
   color: #fff;
   height: 100dvh;
   margin: 0;
-}
+} */
+
 #pagina {
   display: flex;
   align-items: center;
   font-size: 32px;
+  color: #fff;
 }
 
 #pagina::before {
@@ -106,24 +125,26 @@ form {
   width: 50vw;
   height: 70vh;
   border-radius: 30px;
-  background: #585589;
-  background: linear-gradient(
-    260deg,
-    rgba(88, 85, 137, 1) 0%,
-    rgba(59, 56, 104, 1) 58%
-  );
-  box-shadow: 0px 0px 20px #160b3e;
+
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+
+  box-shadow: inset 0 0 20px rgba(234, 234, 234, 0.32);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 form label {
   text-align: left;
   color: #fff;
-  width: 23.4vw;
+  width: 27.4vw;
   font-size: 24px;
   margin: 10px 0 5px 0;
 }
 form input {
   border-radius: 2px;
-  width: 23vw;
+  width: 27vw;
   height: 35px;
   border-radius: 5px;
   padding-left: 5px;
@@ -133,7 +154,7 @@ form textarea {
   border-radius: 2px;
   padding: 15px 0 0 8px;
   border-radius: 5px;
-  width: 23vw;
+  width: 27vw;
   font-size: 16px;
   border: none;
 }
@@ -143,8 +164,9 @@ form button {
   margin-top: 20px;
   font-size: 18px;
   height: 50px;
-  width: 23.5vw;
-  background-color: #7e42f6;
+  width: 27.5vw;
+  background-color: transparent;
+  box-shadow: 0 0 20px #fff;
   color: #fff;
 }
 .icones {

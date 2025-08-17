@@ -3,7 +3,9 @@ import { atlzData } from "./modules/atualizaData.js";
 import { slides } from "./modules/slide.js";
 import mudarTema from "./modules/mudarTema.js";
 import { redirecionarCliente } from "./modules/redirecinar.js";
-
+import { fundoEstrela } from "./modules/fundo-estrelas.js";
+import { terminal } from "./modules/terminal.js";
+import { tradutor } from "./modules/traducao.js";
 //evita bug desnecessarios
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
@@ -15,11 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (path == "/index.html" || path === "/") {
-    mudarTema(); // só na home
+    terminal();
+    tradutor();
   }
 
   if (path === "/contato.html") {
     redirecionarCliente(); //so no contato
+    fundoEstrela();
   }
 
   menuToggle(); //sempre

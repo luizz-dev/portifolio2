@@ -391,7 +391,7 @@ hr {
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1030px) {
   .bloco-caixas section h1 {
     font-size: 28px;
   }
@@ -401,6 +401,18 @@ hr {
   }
   .bloco-caixas p {
     font-size: 14px;
+  }
+
+  .linguagens {
+    gap: 40px; /* menos espaço */
+  }
+
+  .linguagens img {
+    max-width: 200px;
+  }
+
+  .linguagens .css img {
+    width: 550px !important;
   }
   .linguagens h1 {
     font-size: 2.8em;

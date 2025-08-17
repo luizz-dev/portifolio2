@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/dispositivoMovel/contato-m.css">
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
   <title>Contato</title>
 </head>
 
 <body>
-  <nav>
 
+  <!-- Canvas do fundo animado -->
+  <canvas id="space"></canvas>
+
+  <nav>
     <div class="nav-moba">
       <h2 id="pagina">Contato</h2>
       <img src="imgs/list.svg" alt="menu" id="menuNav">
@@ -22,7 +26,6 @@
       <a id="s-nav" href="./sobreMim.html">Sobre mim</a>
       <a id="c-nav" href="./contato.html">Contato</a>
     </div>
-
   </nav>
 
   <section class="contato">
@@ -32,10 +35,8 @@
       <img id="linkedin-contato" src="imgs/icons8-linkedin.svg" alt="">
     </div>
 
-
     <div class="alinha-from-moba">
       <form action="https://formspree.io/f/mbljrnkp" method="POST">
-
         <label>Nome</label>
         <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
 
@@ -46,7 +47,6 @@
         <textarea id="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
 
         <button type="submit">Enviar</button>
-
       </form>
       <div class="iconesMoba">
         <img id="whatsapp-contato" src="imgs/icons8-whatsapp.svg" alt="whatsapp">
@@ -56,6 +56,7 @@
     </div>
   </section>
 
+  <script src="modules/fundo-estrelas.js"></script>
   <script type="module" src="script.js"></script>
 </body>
 

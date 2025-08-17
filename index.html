@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="css/dispositivoMovel/home-m.css">
+
 </head>
 
 <body>
@@ -19,18 +21,15 @@
       <img src="imgs/x-lg.svg" alt="close-menu" id="close-menu">
       <div id="menu-links">
         <a id="h-nav" href="./index.html">Home</a>
-        <a id="s-nav" href="./sobreMim.html">Sobre mim</a>
-        <a id="c-nav" href="./contato.html">Contato</a>
-
-
+        <a data-translate="sobreMim" id="s-nav" href="./sobreMim.html">Sobre mim</a>
+        <a data-translate="contato" id="c-nav" href="./contato.html">Contato</a>
     </nav>
-
 
     <section class="container">
       <div class="sobre">
-        <h1>Prazer em te conhecer! <br> Meu nome é Luiz Eduardo</h1>
-        <p>Eu sou front-end development <br> tenho o objetivo de adquirir experiência <br>como programador desenvolvendo sites.</p>
-        <a href="sobreMim.html">Projetos</a>
+        <h1 data-translate="titulo">Prazer em te conhecer! <br> Meu nome é Luiz Eduardo</h1>
+        <p data-translate="paragrafo">Eu sou front-end development <br> tenho o objetivo de adquirir experiência <br>como programador desenvolvendo sites.</p>
+        <a data-translate="botao" href="sobreMim.html">Projetos</a>
       </div>
       <div class="img-final">
         <img src="imgs/luiz acad.jpg" alt="Minha foto">
@@ -40,14 +39,20 @@
   </header>
 
   <footer>
-    <img id="dtlGrandeC" src="imgs/detalheGrandeClaro.svg" alt="">
-    <img id="dtlGrandeE" src="imgs/detalheGrandeEscuro.svg" alt="">
+    <div class="terminal-loader">
+      <div class="terminal-header">
+        <div class="terminal-title">Status</div>
+        <div class="terminal-controls">
+          <div class="control close"></div>
+          <div class="control minimize"></div>
+          <div class="control maximize"></div>
+        </div>
+      </div>
+      <div class="text" id="typewriter"></div>
+    </div>
 
-    <img src="imgs/detalheMedioClaro.svg" id="dtlMedioC" alt="dtlMedioC">
-    <img src="imgs/detalheMedioEscuro.svg" id="dtlMedioE" alt="detalheMedioEscuro">
+    <img class="active" id="tradutor" src="imgs/tradutor.png" alt="tradutor">
 
-    <img class="active" id="sun" src="imgs/icon-sun.svg" alt="sun">
-    <img id="moon" src="imgs/icon-moon.svg" alt="moon">
   </footer>
 
 

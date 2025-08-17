@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tradutor Manual</title>
+  <style>
+    #tradutor {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #3b82f6, #9333ea, #c084fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(147, 51, 234, 0.6);
+      transition: transform 0.2s ease-in-out;
+      margin-top: 20px;
+    }
+
+    #tradutor:hover {
+      transform: scale(1.1);
+    }
+
+    #tradutor img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 data-translate="titulo">Meu site em português</h1>
+  <p data-translate="paragrafo">Esse texto será traduzido ao clicar no botão.</p>
+
+  <!-- Botão -->
+  <button id="tradutor">
+    <img src="imgs/tradutor.png" alt="tradutor">
+  </button>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
