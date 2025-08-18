@@ -48,13 +48,13 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: #615d9c;
+    background: #090909;
     width: 50vw;
     height: 80px;
     border-radius: 25px;
     margin-top: 25vh;
     padding: 10px;
-    box-shadow: 0 8px 30px #9b95ea;
+    box-shadow: 0 8px 30px #c9c9c9;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -78,10 +78,10 @@
     align-items: center;
     width: 70%;
     margin: 30px auto 0 auto;
-    background: #3b3868;
+    background: #20202026;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 12px 25px #6c69a8;
+    box-shadow: 0 8px 25px #a0a0a091;
   }
   .iconesMoba {
     margin-bottom: 15px !important;

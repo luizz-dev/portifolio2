@@ -169,6 +169,10 @@ form button {
   box-shadow: 0 0 20px #fff;
   color: #fff;
 }
+form button:hover {
+  cursor: pointer;
+  background-color: #80808048;
+}
 .icones {
   display: flex;
   flex-direction: column;
