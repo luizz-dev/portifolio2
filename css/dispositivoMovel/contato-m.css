@@ -217,72 +217,89 @@
     z-index: -1;
   } */
 }
-@media (max-height: 845px) {
-  .contato {
-    margin: 50px 0 0 0;
+@media (max-width: 370px) {
+  #menu-links.on {
+    display: flex;
+    justify-content: space-around;
+    width: 75vw;
   }
+  #menu-links.on a {
+    font-size: 16px;
+  }
+
   form {
-    min-width: 80dvw !important;
-    /* margin-top: -10px; */
-    height: 65dvh;
-  }
-  form label:first-child {
-    margin-top: 25px;
-    /* label nome */
-  }
-  form label {
-    width: 53dvw;
-  }
-  form input {
-    width: 51dvw;
-    min-height: 25px;
-    height: 30px;
+    width: 75vw;
+    margin-top: -10px;
+    height: 50vh;
   }
 
-  form textarea {
-    width: 51dvw;
-  }
-  form button {
-    width: 53dvw;
-    min-height: 40px;
-    margin-bottom: 20px;
-  }
-  .iconesMoba {
-    margin-top: 15px;
-  }
-}
+  @media (max-height: 845px) {
+    .contato {
+      margin: 50px 0 0 0;
+    }
+    form {
+      min-width: 80dvw !important;
+      /* margin-top: -10px; */
+      height: 65dvh;
+    }
+    form label:first-child {
+      margin-top: 25px;
+      /* label nome */
+    }
+    form label {
+      width: 53dvw;
+    }
+    form input {
+      width: 51dvw;
+      min-height: 25px;
+      height: 30px;
+    }
 
-@media (max-height: 801px) {
-  .contato {
-    margin: 50px 0 0 0;
-  }
-  form {
-    min-width: 45dvw !important;
-    /* margin-top: -10px; */
-    height: 70dvh;
-  }
-  form label:first-child {
-    margin-top: 25px;
-    /* label nome */
-  }
-  form label {
-    width: 35dvw;
-  }
-  form input {
-    width: 35dvw;
-    min-height: 25px;
-    height: 30px;
+    form textarea {
+      width: 51dvw;
+    }
+    form button {
+      width: 53dvw;
+      min-height: 40px;
+      margin-bottom: 20px;
+    }
+    .iconesMoba {
+      margin-top: 15px;
+    }
   }
 
-  form textarea {
-    width: 35dvw;
-  }
-  form button {
-    width: 36dvw;
-    min-height: 40px;
-    margin-bottom: 20px;
-  }
-  .iconesMoba {
-    margin-top: 15px;
+  @media (max-height: 801px) {
+    .contato {
+      margin: 50px 0 0 0;
+    }
+    form {
+      min-width: 45dvw !important;
+      /* margin-top: -10px; */
+      height: 70dvh;
+    }
+    form label:first-child {
+      margin-top: 25px;
+      /* label nome */
+    }
+    form label {
+      width: 35dvw;
+    }
+    form input {
+      width: 35dvw;
+      min-height: 25px;
+      height: 30px;
+    }
+
+    form textarea {
+      width: 35dvw;
+    }
+    form button {
+      width: 36dvw;
+      min-height: 40px;
+      margin-bottom: 20px;
+    }
+    .iconesMoba {
+      margin-top: 15px;
+    }
   }
 }
