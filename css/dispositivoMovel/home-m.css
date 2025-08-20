@@ -251,6 +251,7 @@
   }
   #menu-links.on {
     width: 65vw;
+    z-index: 100;
   }
   nav {
     display: flex;
