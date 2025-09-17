@@ -131,29 +131,45 @@
     display: none;
   }
 }
-@media (max-width: 560px) {
+/* meu celular de refencia 560 px */
+@media (max-width: 530px) {
   .contato {
     margin: 60px 0 0 0;
   }
+  #menu-links.on {
+    width: 75vw;
+    height: 85px;
+    margin-top: 23vh;
+    padding: 10px;
+  }
   form {
-    width: 70vw;
+    width: 80vw;
+    height: 65vh;
     margin-top: -10px;
   }
   form label {
-    width: 45vw;
+    width: 51vw;
   }
   form input {
-    width: 44vw;
+    width: 50vw;
     height: 35px;
   }
   form textarea {
-    width: 44vw;
+    width: 50vw;
   }
   form button {
-    width: 45vw;
+    width: 50vw;
+  }
+  .alinha-from-moba .iconesMoba {
+    width: 73%;
+    margin: 30px auto 0 auto;
+    background: #20202026;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #a0a0a091;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 450px) {
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -178,7 +194,7 @@
     margin: 64px 0 0 0;
   }
   form {
-    width: 75vw;
+    width: 85vw;
     margin-top: -10px;
     height: 60vh;
   }
@@ -217,89 +233,72 @@
     z-index: -1;
   } */
 }
-@media (max-width: 370px) {
-  #menu-links.on {
-    display: flex;
-    justify-content: space-around;
-    width: 75vw;
+@media (max-height: 845px) {
+  .contato {
+    margin: 50px 0 0 0;
   }
-  #menu-links.on a {
-    font-size: 16px;
-  }
-
   form {
-    width: 75vw;
-    margin-top: -10px;
-    height: 50vh;
+    min-width: 80dvw !important;
+    /* margin-top: -10px; */
+    height: 65dvh;
+  }
+  form label:first-child {
+    margin-top: 25px;
+    /* label nome */
+  }
+  form label {
+    width: 53dvw;
+  }
+  form input {
+    width: 51dvw;
+    min-height: 25px;
+    height: 30px;
   }
 
-  @media (max-height: 845px) {
-    .contato {
-      margin: 50px 0 0 0;
-    }
-    form {
-      min-width: 80dvw !important;
-      /* margin-top: -10px; */
-      height: 65dvh;
-    }
-    form label:first-child {
-      margin-top: 25px;
-      /* label nome */
-    }
-    form label {
-      width: 53dvw;
-    }
-    form input {
-      width: 51dvw;
-      min-height: 25px;
-      height: 30px;
-    }
+  form textarea {
+    width: 51dvw;
+  }
+  form button {
+    width: 53dvw;
+    min-height: 40px;
+    margin-bottom: 20px;
+  }
+  .iconesMoba {
+    margin-top: 15px;
+  }
+}
 
-    form textarea {
-      width: 51dvw;
-    }
-    form button {
-      width: 53dvw;
-      min-height: 40px;
-      margin-bottom: 20px;
-    }
-    .iconesMoba {
-      margin-top: 15px;
-    }
+@media (max-height: 801px) {
+  .contato {
+    margin: 50px 0 0 0;
+  }
+  form {
+    min-width: 45dvw !important;
+    /* margin-top: -10px; */
+    height: 70dvh;
+  }
+  form label:first-child {
+    margin-top: 25px;
+    /* label nome */
+  }
+  form label {
+    width: 35dvw;
+  }
+  form input {
+    width: 35dvw;
+    min-height: 25px;
+    height: 30px;
   }
 
-  @media (max-height: 801px) {
-    .contato {
-      margin: 50px 0 0 0;
-    }
-    form {
-      min-width: 45dvw !important;
-      /* margin-top: -10px; */
-      height: 70dvh;
-    }
-    form label:first-child {
-      margin-top: 25px;
-      /* label nome */
-    }
-    form label {
-      width: 35dvw;
-    }
-    form input {
-      width: 35dvw;
-      min-height: 25px;
-      height: 30px;
-    }
-
-    form textarea {
-      width: 35dvw;
-    }
-    form button {
-      width: 36dvw;
-      min-height: 40px;
-      margin-bottom: 20px;
-    }
-    .iconesMoba {
-      margin-top: 15px;
-    }
+  form textarea {
+    width: 35dvw;
+  }
+  form button {
+    width: 36dvw;
+    min-height: 40px;
+    margin-bottom: 20px;
+  }
+  .iconesMoba {
+    margin-top: 15px;
   }
 }
