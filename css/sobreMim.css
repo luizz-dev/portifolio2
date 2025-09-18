@@ -432,21 +432,6 @@ hr {
   margin-left: 12px;
 }
 
-.bloco-caixas {
-  display: flex;
-  justify-content: center;
-  margin: 100px 0 40px;
-}
-
-.bloco-caixas div {
-  width: 320px;
-  min-height: 300px;
-  border-radius: 15px 15px 0 0;
-  padding: 20px;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .bloco-caixas div:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
@@ -462,6 +447,20 @@ hr {
   background: #4d11a7 !important;
   min-height: 380px;
   margin-top: -40px;
+}
+
+.bloco-caixas {
+  display: flex;
+  justify-content: center;
+  margin: 00px 0 40px;
+}
+.bloco-caixas div {
+  width: 100px;
+  min-height: 300px;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bloco-caixas div img {
