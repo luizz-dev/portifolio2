@@ -2,10 +2,8 @@ arrumar o hover dos links (mesmo px do contato)
 arrumar pro mobile contato
 
 
-ver a solucao
-https://chatgpt.com/c/689613bd-2034-8323-b350-155669455ad4
 
 fazer animacao de entrada no site
-definir scool para cada pagina e se a pessoa scrolar voce desce uma secao
+definir scrool para cada pagina e se a pessoa scrolar voce desce uma secao
 
-Botão de Trocar Idioma em vez de mudar cor
+adiconar uma animacao de entrada na pagina e de elementos aparecendo na pagina com base no scrool

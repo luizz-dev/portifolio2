@@ -1,7 +1,6 @@
 import { menuToggle } from "./modules/menu.js";
 import { atlzData } from "./modules/atualizaData.js";
 import { slides } from "./modules/slide.js";
-import mudarTema from "./modules/mudarTema.js";
 import { redirecionarCliente } from "./modules/redirecinar.js";
 import { fundoEstrela } from "./modules/fundo-estrelas.js";
 import { terminal } from "./modules/terminal.js";
