@@ -1,4 +1,3 @@
-/* dispositivos moveis */
 @media (max-width: 708px) {
   body {
     z-index: 1;
@@ -19,7 +18,7 @@
   }
   .nav-moba {
     display: flex;
-    justify-content: space-around; /* Espaço ao redor dos itens */
+    justify-content: space-around;
     align-items: center;
     width: 80vw;
   }
@@ -31,6 +30,9 @@
   }
   #close-menu {
     display: none;
+  }
+  .iconesMoba img {
+    cursor: pointer;
   }
 
   /* Controla visibilidade */
@@ -131,7 +133,7 @@
     display: none;
   }
 }
-/* meu celular de refencia 560 px */
+
 @media (max-width: 530px) {
   .contato {
     margin: 60px 0 0 0;
@@ -214,24 +216,6 @@
   #github {
     margin: 0 30px;
   }
-
-  /* .icones-moba {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .icones-moba::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    height: 10px;
-    width: 10vw;
-    border-radius: 5px;
-    margin-top: 55px;
-    background: #211f3c;
-    box-shadow: -10px 0px 1px #211f3c;
-    z-index: -1;
-  } */
 }
 @media (max-height: 845px) {
   .contato {
@@ -239,12 +223,10 @@
   }
   form {
     min-width: 80dvw !important;
-    /* margin-top: -10px; */
     height: 65dvh;
   }
   form label:first-child {
     margin-top: 25px;
-    /* label nome */
   }
   form label {
     width: 53dvw;
@@ -274,12 +256,10 @@
   }
   form {
     min-width: 45dvw !important;
-    /* margin-top: -10px; */
     height: 70dvh;
   }
   form label:first-child {
     margin-top: 25px;
-    /* label nome */
   }
   form label {
     width: 35dvw;

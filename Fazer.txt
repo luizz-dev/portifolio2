@@ -1,7 +1,3 @@
-arrumar o hover dos links (mesmo px do contato)
-arrumar pro mobile contato
-
-
 
 fazer animacao de entrada no site
 definir scrool para cada pagina e se a pessoa scrolar voce desce uma secao

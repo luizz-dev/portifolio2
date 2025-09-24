@@ -1,4 +1,1 @@
-sobre mim arrumar as imagens
-
-mobile (home: h1 grande, foto acima do menu, semm o efeito atras da foto"add algo",
-contato, form muito grande, menu sem largura nenhuma"quebra os links")
+finalizei
