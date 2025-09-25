@@ -112,6 +112,30 @@ body::after {
   }
 }
 
+:root {
+  --size: 40px;
+  --border: 2px;
+  --color: #fff; /* cor da borda */
+  --bg: rgba(0, 0, 0, 0);
+  --glow: rgba(255, 255, 255, 0.9);
+  --speed: 0.15; /* velocidade de interpolação (0 a 1) */
+  --offset-x: -10px; /* deslocamento horizontal relativo ao cursor (direita negativa) */
+  --offset-y: -10px;
+}
+
+/* O elemento que segue o cursor é apenas uma tela de borda */
+.cursor-follow {
+  position: fixed;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: var(--border) solid var(--color);
+  background: var(--bg);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  z-index: 9999;
+}
+
 body {
   color: #fff;
   margin: 25px 100px 0px 100px;
