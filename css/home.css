@@ -150,7 +150,7 @@ footer {
   animation-delay: 0.8s;
 }
 .img-final {
-  animation-delay: 1.1s;
+  animation-delay: 0.4s;
 }
 
 :root {
@@ -220,6 +220,9 @@ nav a::after {
   left: 0;
   transition: 0.3s ease;
 }
+.mobile {
+  display: none;
+}
 #menuNav {
   display: none;
   filter: brightness(0) invert(1);
@@ -279,9 +282,7 @@ nav a::after {
   border: none;
   color: #fff;
 }
-body.light .sobre a {
-  background: #660ace;
-}
+
 .sobre h1 {
   font-size: 45px;
 }

@@ -2,8 +2,9 @@ export function menuToggle() {
   const menuNav = document.getElementById("menuNav");
   const menuLinks = document.getElementById("menu-links");
   const menuNavClose = document.getElementById("close-menu");
+  const menuLinksM = document.getElementById("menu-links-m");
 
-  if (!menuNav || !menuLinks || !menuNavClose) return;
+  if (!menuNav || !menuLinks || !menuNavClose || !menuLinksM) return;
 
   const transitionTime = 400;
 
@@ -21,12 +22,16 @@ export function menuToggle() {
         document.body.classList.add("transparente");
       }, 20);
 
-      menuLinks.classList.add("on");
+      if (window.innerWidth <= 560) {
+        menuLinksM.classList.add("on");
+      } else {
+        menuLinks.classList.add("on");
+      }
+
       document.body.classList.add("transparente");
     }, transitionTime);
   });
 
-  // Função para fechar com animação
   function closeMenu() {
     menuNavClose.classList.add("rotate");
 
@@ -39,8 +44,11 @@ export function menuToggle() {
         menuNav.classList.remove("hide");
         menuNav.classList.add("rotate");
 
-        menuLinks.classList.remove("on");
-        document.body.classList.remove("transparente");
+        if (window.innerWidth <= 560) {
+          menuLinksM.classList.remove("on");
+        } else {
+          menuLinks.classList.remove("on");
+        }
 
         setTimeout(() => {
           menuNav.classList.remove("rotate");
@@ -49,17 +57,19 @@ export function menuToggle() {
     }, transitionTime);
   }
 
-  // Clicou no botão X
   menuNavClose.addEventListener("click", closeMenu);
 
-  // Clicou fora do menu
-  document.addEventListener("click", (e) => {
-    const clickedOutside =
-      !menuLinks.contains(e.target) &&
-      !menuNav.contains(e.target) &&
-      !menuNavClose.contains(e.target);
+  document.addEventListener("click", function (e) {
+    const target = e.target;
 
-    const menuIsOpen = menuLinks.classList.contains("on");
+    const clickedOutside =
+      !menuNav.contains(target) &&
+      !menuNavClose.contains(target) &&
+      !menuLinks.contains(target) &&
+      !menuLinksM.contains(target);
+
+    const menuIsOpen =
+      menuLinks.classList.contains("on") || menuLinksM.classList.contains("on");
 
     if (clickedOutside && menuIsOpen) {
       closeMenu();

@@ -5,7 +5,7 @@ import { redirecionarCliente } from "./modules/redirecinar.js";
 import { fundoEstrela } from "./modules/fundo-estrelas.js";
 import { terminal } from "./modules/terminal.js";
 import { tradutor } from "./modules/traducao.js";
-import { segueCursor } from "./modules/segueCursos.js";
+import { segueCursor } from "./modules/segueCursor.js";
 import { animacaoScroll } from "./modules/animacaoScroll.js";
 //evita bug desnecessarios
 document.addEventListener("DOMContentLoaded", () => {

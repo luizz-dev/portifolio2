@@ -262,6 +262,9 @@ nav a::after {
   left: 0;
   transition: 0.3s ease;
 }
+.mobile {
+  display: none;
+}
 #menuNav {
   display: none;
   filter: brightness(0) invert(1);
