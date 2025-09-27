@@ -25,9 +25,7 @@ export function terminal() {
       wordIndex = (wordIndex + 1) % words.length;
       speed = 500; // pausa antes de escrever a próxima palavra
     }
-
     setTimeout(typeEffect, speed);
   }
-
   typeEffect();
 }

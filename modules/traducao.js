@@ -25,7 +25,7 @@ export function tradutor() {
 
     document.querySelectorAll("[data-translate]").forEach((el) => {
       let chave = el.getAttribute("data-translate");
-      el.innerHTML = traducoes[idiomaAtual][chave]; // <<< aqui funciona o <br>
+      el.innerHTML = traducoes[idiomaAtual][chave]; 
     });
   });
 }

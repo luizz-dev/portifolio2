@@ -1,5 +1,1 @@
-
-fazer animacao de entrada no site
-definir scrool para cada pagina e se a pessoa scrolar voce desce uma secao
-
-adiconar uma animacao de entrada na pagina e de elementos aparecendo na pagina com base no scrool
+tudo feito

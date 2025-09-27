@@ -70,6 +70,5 @@ export function fundoEstrela() {
       c.fillStyle = "rgba(209, 255, 255, " + star.o + ")";
     }
   }
-
   executeFrame();
 }

@@ -6,6 +6,7 @@ import { fundoEstrela } from "./modules/fundo-estrelas.js";
 import { terminal } from "./modules/terminal.js";
 import { tradutor } from "./modules/traducao.js";
 import { segueCursor } from "./modules/segueCursos.js";
+import { animacaoScroll } from "./modules/animacaoScroll.js";
 //evita bug desnecessarios
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (path == "/sobreMim.html") {
     slides();
     atlzData();
-    // só executa na página "projetos.html"
+    animacaoScroll();
   }
 
   if (path == "/index.html" || path === "/") {
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (path === "/contato.html") {
-    redirecionarCliente(); //so no contato
+    redirecionarCliente();
     fundoEstrela();
   }
 

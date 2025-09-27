@@ -112,6 +112,47 @@ body::after {
   }
 }
 
+/* Animação de fade + deslize */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.sobre h1,
+.sobre p,
+.sobre a,
+.img-final,
+nav,
+footer {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.sobre h1 {
+  animation-delay: 0.2s;
+}
+.sobre p {
+  animation-delay: 0.5s;
+}
+.sobre a {
+  animation-delay: 0.8s;
+}
+.img-final {
+  animation-delay: 1.1s;
+}
+
 :root {
   --size: 40px;
   --border: 2px;
@@ -136,6 +177,7 @@ body::after {
   z-index: 9999;
 }
 
+/* codigo padrao abaixo */
 body {
   color: #fff;
   margin: 25px 100px 0px 100px;
